@@ -15,13 +15,18 @@
 <body>
     <h1>Hello!</h1>
     <form action="greeter">
-        <!--
-            TODO: Pass to the servlet two parameters:
-            
-            user: the user name
-            mood: the user mood, chosen among happy, sleepy, active, ...
-         -->
-        <button>OK</button>
+        <label>User: <input name="name" placeholder ="Enter your name"></label>
+        <br>
+        <div>
+        		<span class="information>">How are you feeling right now?</span>
+        		<select name="mood">
+        		<option value="happy">happy</option> 
+        		<option value="sleepy" selected >sleepy</option> 
+        		<option value="active">active</option> 
+        		</select>
+        </div>
+        <br>
+        <button>Go</button>
     </form>
 </body>
 

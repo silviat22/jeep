@@ -2,7 +2,8 @@
     Introduction to Jakarta Enterprise Edition - JSP
     https://github.com/egalli64/jeep
  --%>
-<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -13,15 +14,16 @@
 <title>Hello</title>
 </head>
 
-<body class="active">
-    <h1>Hello!</h1>
+<body class="${param.mood}"> 
+	<h1>Hello!</h1>
 
-    <!--
+	<!--
         TODO: Use the param to
         
         (1) Set the color background color accordingly to their mood
         (2) Greet the users
      -->
+	<p>Hello ${param.name}!</p>
 </body>
 
 </html>
